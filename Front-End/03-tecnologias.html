@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça as linguagens e tecnologias presentes no portfólio.">
+
+    <title>Tecnologias | Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-tecnologias">
+    <!--CABEÇALHO-->
+
+    <header class="cabecalho">
+        <a href="01-Pagina Principal.html" class="logo">
+            GABRIEL | PORTFÓLIO
+        </a>
+
+        <nav class="menu" aria-label="Menu Principal">
+            <a href="01-Pagina Principal.html">Início</a>
+            <a href="02-projetos.html">Projetos</a>
+            <a href="03-tecnologias.html" class="ativo" aria-current="page">Tecnologias</a>
+            <a href="04-sobre.html">Sobre mim</a>
+            <a href="05-contato.html">Contato</a>
+        </nav>
+            
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+
+    <main class="conteudo">
+            <!--INTRODUÇÃO-->
+        <section class="introducao-tecnologias">
+            <p class="subtitulo">
+                REGISTRO DE TECNOLOGIAS
+            </p>
+
+            <h1>
+                Ferramentas de <span>desenvolvimento.</span>
+            </h1>
+
+            <p class="descricao">
+                Cada tecnologia representa uma ferramenta
+                utilizada na construção de soluções.
+
+                Selecione um dos frascos para conhecer um pouco
+                mais sobre cada linguagem e sua aplicação.
+            </p>
+        </section>
+
+    <!--FRASCOS-->
+        
+        <section class="colecao-tecnologias" aria-label="Coleção de Tecnologias">
+
+            <!--FRASCO PYTHON-->
+
+            <button
+                type="button"
+                class="frasco-tecnologia"
+                data-tecnolgia="Python"
+                aria-pressed="false"
+                aria-controls="painel-tecnologia"
+            >
+
+            <div class="frasco-imagem">
+                <img src="../Imagens/Frasco Oscorp Pyhton.png" alt="Frasco de vidro com líquido azul representando Python.">
+            </div>
+
+            <div class="identificacao-frasco">
+                <span class="codigo-frasco">REGISTRO 001</span>
+                <h2>Python</h2>
+                <span class="funcao-frasco">DESENVOLVIMENTO E AUTOMAÇÃO</span>
+            </div>
+
+            </button>
+
+            <!--FRASCO JAVASCRIPT-->
+
+            <button 
+                type="button"
+                class="frasco-tecnologia"
+                data-tecnolgia="javascript"
+                aria-pressed="false"
+                aria-controls="painel-tecnologia"
+            >
+            
+            <div class="frasco-imagem">
+                <img src="../Imagens/Frasco Dourado JavaScript Industrial.png" alt="Frasco de vidro com líquido amarelo representando JavaScript">
+            </div>
+
+            <div class="identificacao-frasco">
+                <span class="codigo-frasco">REGISTRO 002</span>
+                <h2>JavaScript</h2>
+                <span class="funcao-frasco">INTERATIVIDADE</span>
+            </div>
+
+            </button>
+
+            <!--FRASCO HTML + CSS-->
+
+            <button
+                type="button"
+                class="frasco-tecnologia"
+                data-tecnologia="html-css"
+                aria-pressed="false"
+                aria-controls="painel-tecnologia"
+            >
+
+            <div class="frasco-imagem">
+                <img src="../Imagens/Frasco Tecnológico HTML + CSS.png" alt="Frasco de vidro com líquido âmbar representando HTML e CSS">
+            </div>
+
+            <div class="identificacao-frasco">
+                <span class="codigo-frasco">REGISTRO 003</span>
+                <h2>HTML + CSS</h2>
+                <span class="funcao-frasco">ESTRUTURA E ESTILIZAÇÃO</span>
+            </div>
+
+            </button>
+
+        </section>
+
+    <!--PAINEL DE INFORMAÇÃOES-->
+
+        <section
+            class="painel-tecnologia"
+            id="painel-tecnologia"
+            aria-live="polite"
+            aria-label="Informações da tecnologia selecionada"
+        >
+
+        <div class="painel-identificacao">
+            <span class="painel-codigo">ARQUIVO DE TECNOLOGIA</span>
+            <h2 id="nome-tecnologia">Selecione um frasco</h2>
+        </div>
+
+        <div class="painel-conteudo">
+            <div class="informacao-tecnologia">
+                <span class="titulo-informacao">APLICAÇÃO</span>
+                <p id="descricao-tecnologia">
+                    Escolha uma das tecnologias disponíveis
+                    para visualizar suas informações.
+                </p>
+            </div>
+
+            <div class="informacao-tecnologia">
+                <span class="titulo-informacao">REGISTRO</span>
+                <p id="registro-tecnologia">Aguardando seleção...</p>
+            </div>
+        </div>
+
+    </section>
+    
+    </main>
+    
+    <!--RODAPÉ-->
+
+    <footer class="rodape">
+        <p>
+            GABRIEL
+            <span>|</span>
+            Portfólio de Desenvolvimento de Software
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
